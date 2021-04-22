@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+          <a style="text-align: center" href="index.html">Google Search</a>
+        </nav>
+        <header>
+          <img src="logo.jpg" alt="logo">
+          <h5 style="color: rgb(150, 190, 235)">Advanced Search</h5>
+        </header>
+        <h3 style="margin: 15px">Find pages with… </h3>
+
+        <form action="https://google.com/search" autocomplete="off">
+          <table style="width:100%">
+            <tr>
+              <th><text style="margin: 15px; width: 40px;">All these words:</text></th>
+              <th><input class="textinput" type="text" name="as_q">         </th>     
+            </tr>
+            <tr>
+              <th><text style="margin: 15px">This exact word or phrase:</text></th>
+              <th><input class="textinput" type="text" name="as_epq"></th>
+            </tr>
+            <tr>
+              <th><text style="margin: 15px">Any of these words:</text></th>
+              <th><input class="textinput" type="text" name="as_oq"></th>
+            </tr>
+            <tr>
+              <th><text style="margin: 15px">None of these words:</text></th>
+              <th><input class="textinput" type="text" name="as_eq"></th>
+            </tr>
+          </table>
+            <input type="hidden" name= "as_qdr" value="all">
+            <div style="margin: 15px; text-align: center;">
+              <input class= "btn btn-primary" type="submit" value="Google Search">
+            </div>
+
+        </form>
+        
+    </body>
+</html>
